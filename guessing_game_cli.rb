@@ -3,12 +3,12 @@ def run_guessing_game
   puts "Guess a number between 1 and 6"
   input = gets.chomp.downcase.to_s
   if input == random
-    "You guessed the correct number!"
+    puts "You guessed the correct number!"
   end
   if input != random
-    "Sorry! The computer guessed #{random}"
+    puts "Sorry! The computer guessed #{random}"
   end
   if input == "exit"
-    "Goodbye!"
+    puts "Goodbye!"
   end
 end
